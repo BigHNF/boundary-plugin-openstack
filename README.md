@@ -26,6 +26,8 @@ To get the new meter:
     chmod +x setup_meter.sh
     ./setup_meter.sh
 
+#### For Boundary Meter less than V4.0
+
 |  Runtime | node.js | Python | Java |
 |:---------|:-------:|:------:|:----:|
 | Required |         |    +   |      |
@@ -53,27 +55,29 @@ None
 
 #### For All Versions
 
-|Metric Name             |Description                       |
-|:-----------------------|:---------------------------------|
-|OS_CPUUTIL_AVG          |                                  |
-|OS_CPUUTIL_SUM          |                                  |
-|OS_CPUUTIL_MIN          |                                  |
-|OS_CPUUTIL_MAX          |                                  |
-|OS_CPU_AVG              |                                  |
-|OS_CPU_SUM              |                                  |
-|OS_INSTANCE_SUM         |                                  |
-|OS_INSTANCE_MAX         |                                  |
-|OS_MEMORY_SUM           |                                  |
-|OS_MEMORY_AVG           |                                  |
-|OS_MEMORY_USAGE_SUM     |                                  |
-|OS_MEMORY_USAGE_SUM     |                                  |
-|OS_VOLUME_SUM           |                                  |
-|OS_VOLUME_AVG           |                                  |
-|OS_IMAGE_SIZE_SUM       |                                  |
-|OS_IMAGE_SIZE_AVG       |                                  |
-|OS_DISK_READ_RATE_SUM   |                                  |
-|OS_DISK_READ_RATE_AVG   |                                  |
-|OS_NETWORK_IN_BYTES_SUM |                                  |
-|OS_NETWORK_IN_BYTES_AVG |                                  |
-|OS_NETWORK_OUT_BYTES_SUM|                                  |
-|OS_NETWORK_OUT_BYTES_AVG|                                  |
+|Metric Name             |Description                                                                |
+|:-----------------------|:--------------------------------------------------------------------------|
+|OS_CPUUTIL_AVG          |Average openstack CPU utilization on the running node                      |
+|OS_CPUUTIL_SUM          |Summary of total openstack CPU utilization                                 |
+|OS_CPUUTIL_MIN          |The minimum openstack CPU utilization by VMs running on the node           |
+|OS_CPUUTIL_MAX          |The maximum openstack CPU utilization by VMs running on the node           |
+|OS_CPU_AVG              |Average CPU time used by the openstack VMs                                 |
+|OS_CPU_SUM              |Total CPU time used by the openstack VMs                                   |
+|OS_INSTANCE_SUM         |Summary of running instances in openstack                                  |
+|OS_INSTANCE_MAX         |The maximum number of instances started                                    |
+|OS_MEMORY_SUM           |The summary of allocated memory by all VMs on the node                     |
+|OS_MEMORY_AVG           |The average allocated memory by all VMs on the node                        |
+|OS_MEMORY_USAGE_SUM     |Volume of RAM used by the instance from the amount of its allocated memory |
+|OS_MEMORY_USAGE_SUM     |Volume of RAM used by the instance from the amount of its allocated memory |
+|OS_VOLUME_SUM           |Summary of created volumes                                                 |
+|OS_VOLUME_AVG           |Average of created volumes by the VMs running on the node                  |
+|OS_IMAGE_SIZE_SUM       |The total amount of space used by the created images                       |
+|OS_IMAGE_SIZE_AVG       |Average amount of space used by the created images                         |
+|OS_DISK_READ_RATE_SUM   |The total amount of disk read rate on all VMs running on the node          |
+|OS_DISK_READ_RATE_AVG   |Average amount of disk read rate on all VMs running on the node            |
+|OS_DISK_WRITE_RATE_SUM  |The total amount of disk write rate on all VMs running on the node         |
+|OS_DISK_WRITE_RATE_AVG  |Average amount of disk write rate on all VMs running on the node           |
+|OS_NETWORK_IN_BYTES_SUM |The total amount of network incoming bytes to all VMs running on the node  |
+|OS_NETWORK_IN_BYTES_AVG |Average amount of network incoming bytes to all VMs running on the node    |
+|OS_NETWORK_OUT_BYTES_SUM|The total amount of network outgoing bytes from all VMs running on the node|
+|OS_NETWORK_OUT_BYTES_AVG|Average amount of network outgoing bytes from all VMs running on the node  |
