@@ -1,7 +1,12 @@
 {
-    "description": "Metric collector for Openstack",
-    "command": "python plugin.py",
+    "description" : "Metric collector for Openstack",
     "icon" : "icon.png",
+    "command" : "python plugin.py",
+    "postInstall" : "",
+    "command_lua" : "boundary-meter init.lua",
+    "postInstall" : "",
+    "ignore" : "",
+
     "metrics" : [
         "OS_CPUUTIL_AVG",
         "OS_CPUUTIL_SUM",
