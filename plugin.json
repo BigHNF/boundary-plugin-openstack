@@ -4,7 +4,7 @@
     "command" : "python plugin.py",
     "postInstall" : "",
     "command_lua" : "boundary-meter init.lua",
-    "postInstall" : "",
+    "postInstall_lua" : "",
     "ignore" : "",
 
     "metrics" : [
