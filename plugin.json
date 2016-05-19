@@ -1,9 +1,9 @@
 {
-    "description" : "Metric collector for Openstack",
+    "description" : "Truesight Pulse Plugin for Openstack",
     "icon" : "icon.png",
     "command" : "python plugin.py",
     "postInstall" : "",
-    "command_lua" : "",
+    "command_lua" : "boundary-meter init.lua",
     "postInstall_lua" : "",
     "ignore" : "",
 
@@ -78,6 +78,15 @@
             "description" : "The password to get into the service panel for OpenStack",
             "type" : "password",
             "required" : true
+        },
+        {
+            "title" : "Poll Interval (ms)",
+            "name" : "pollInterval",
+            "description" : "The Poll Interval in milliseconds to poll for metrics. Ex. 1000",
+            "type" : "integer",
+            "default" : 1000,
+            "required" : true
         }
     ]
 }
+
