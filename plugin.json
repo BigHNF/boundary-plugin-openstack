@@ -1,4 +1,9 @@
 {
+    "name": "Truesight Pulse OpenStack plugin",
+    "version" : "0.9.1",
+    "meterVersionRequired" : "4.2.0-611",
+    "unsupportedPlatforms" : [ ],
+    "tags": "Openstack",
     "description" : "Truesight Pulse Plugin for Openstack",
     "icon" : "icon.png",
     "command" : "python plugin.py",
