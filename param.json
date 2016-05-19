@@ -4,5 +4,6 @@
   "service_user" : "ceilometer",
   "service_timeout" :10 ,
   "service_password" : "21c07e9a5d2c45c2",
-  "pollInterval": 5000
+  "pollInterval" : 1000
 }
+
