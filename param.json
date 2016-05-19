@@ -1,0 +1,8 @@
+{
+  "service_tenant" : "services",
+  "service_endpoint" : "http://clm-pun-022024.bmc.com:5000/v2.0",
+  "service_user" : "ceilometer",
+  "service_timeout" :10 ,
+  "service_password" : "21c07e9a5d2c45c2",
+  "pollInterval": 5000
+}
