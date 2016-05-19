@@ -3,7 +3,7 @@
     "icon" : "icon.png",
     "command" : "python plugin.py",
     "postInstall" : "",
-    "command_lua" : "boundary-meter init.lua",
+    "command_lua" : "",
     "postInstall_lua" : "",
     "ignore" : "",
 
