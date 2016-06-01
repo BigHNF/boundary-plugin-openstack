@@ -155,7 +155,7 @@
   "OS_IMAGE_SIZE_AVG": {
     "displayName": "Average size of all images",
     "description": "Average amount of space used by the created images",
-    "unit": "int",
+    "unit": "number",
     "displayNameShort": "OS IMG size AVG",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
