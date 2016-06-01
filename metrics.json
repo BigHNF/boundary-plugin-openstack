@@ -15,7 +15,7 @@
     "displayNameShort": "OS CPU util sum",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_CPUUTIL_MIN": {
     "displayName": "Openstack CPU utilization min",
@@ -24,7 +24,7 @@
     "displayNameShort": "OS CPU util min",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "min"
   },
   "OS_CPUUTIL_MAX": {
     "displayName": "Openstack CPU utilization max",
@@ -33,7 +33,7 @@
     "displayNameShort": "OS CPU util max",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "max"
   },
   "OS_CPU_AVG": {
     "displayName": "Average CPU time used",
@@ -51,7 +51,7 @@
     "displayNameShort": "OS CPU SUM",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_INSTANCE_SUM": {
     "displayName": "Total instances running",
@@ -60,7 +60,7 @@
     "displayNameShort": "OS INST SUM",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_INSTANCE_MAX": {
     "displayName": "Maximum started instances",
@@ -69,7 +69,7 @@
     "displayNameShort": "OS INST MAX",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "max"
   },
   "OS_MEMORY_SUM": {
     "displayName": "Total allocated memory",
@@ -78,7 +78,7 @@
     "displayNameShort": "OS MEM SUM",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_MEMORY_AVG": {
     "displayName": "Average allocated memory",
@@ -96,7 +96,7 @@
     "displayNameShort": "OS MEM usage SUM",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_MEMORY_USAGE_AVG": {
     "displayName": "Average memory used",
@@ -114,7 +114,7 @@
     "displayNameShort": "OS VOL SUM",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_VOLUME_AVG": {
     "displayName": "Average volume created",
@@ -132,7 +132,7 @@
     "displayNameShort": "OS IMG SUM",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_IMAGE_AVG": {
     "displayName": "Average image created",
@@ -150,7 +150,7 @@
     "displayNameShort": "OS IMG size SUM",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_IMAGE_SIZE_AVG": {
     "displayName": "Average size of all images",
@@ -168,7 +168,7 @@
     "displayNameShort": "OS DSK R rate SUM",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_DISK_READ_RATE_AVG": {
     "displayName": "Average disk read rate",
@@ -186,7 +186,7 @@
     "displayNameShort": "OS DSK W rate SUM",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_DISK_WRITE_RATE_AVG": {
     "displayName": "Average disk write rate",
@@ -204,7 +204,7 @@
     "displayNameShort": "OS NET in byte SUM",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_NETWORK_IN_BYTES_AVG": {
     "displayName": "Average of network incoming bytes",
@@ -222,7 +222,7 @@
     "displayNameShort": "OS NET out byte SUM",
     "defaultResolutionMS": 1000,
     "isDisabled": 0,
-    "defaultAggregate": "avg"
+    "defaultAggregate": "sum"
   },
   "OS_NETWORK_OUT_BYTES_AVG": {
     "displayName": "Average of network outgoing bytes",
