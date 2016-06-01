@@ -44,7 +44,7 @@
     "dashboards" : [
         {
             "name" : "Openstack",
-            "layout" : "d-w=4&d-h=4&d-pad=5&d-bg=none&d-g-OS_CPUUTIL_AVG=0-0-1-1&d-g-OS_CPUUTIL_SUM=1-0-1-1&d-g-OS_CPUUTIL_MIN=0-1-1-1&d-g-OS_CPUUTIL_MAX=0-2-1-1&d-g-OS_CPU_AVG=1-1-1-1&d-g-OS_CPU_SUM=1-2-1-1&d-g-OS_INSTANCE_SUM=2-2-1-1&d-g-OS_INSTANCE_MAX=0-3-1-1&d-g-OS_MEMORY_SUM=1-3-1-1&d-g-OS_MEMORY_AVG=2-3-1-1"
+            "layout" : "d-w=4&d-h=5&d-pad=5&d-light=0&d-bg=none&d-g-OS_CPUUTIL_AVG=0-0-1-1&d-g-OS_CPUUTIL_SUM=1-0-1-1&d-g-OS_CPUUTIL_MIN=2-0-1-1&d-g-OS_CPU_AVG=3-0-1-1&d-g-OS_CPUUTIL_MAX=0-1-1-1&d-g-OS_CPU_SUM=1-1-1-1&d-g-OS_INSTANCE_MAX=2-1-1-1&d-g-OS_INSTANCE_SUM=3-1-1-1&d-g-OS_MEMORY_SUM=0-2-1-1&d-g-OS_MEMORY_AVG=1-2-1-1&d-g-OS_IMAGE_AVG=2-2-1-1&d-g-OS_IMAGE_SUM=3-2-1-1&d-g-OS_IMAGE_SIZE_AVG=0-3-1-1&d-g-OS_IMAGE_SIZE_SUM=1-3-1-1&d-g-OS_VOLUME_AVG=2-3-1-1&d-g-OS_VOLUME_SUM=3-3-1-1"
         }
     ],
 
@@ -54,28 +54,28 @@
             "name" : "service_tenant",
             "description" : "The tenant to get into the service panel for OpenStack",
             "type" : "string",
-            "required" : false
+            "required" : true
         },
         {
             "title" : "Service Endpoint",
-            "name" : "service_endpoint",
-            "description" : "The endpoint to get into the service panel for OpenStack",
+            "name" : "service_host",
+            "description" : "The endpoint(host name) to get into the service panel for OpenStack",
             "type" : "string",
-            "required" : false
+            "required" : true
+        },
+        {
+            "title" : "Service Port",
+            "name" : "service_port",
+            "description" : "The endpoint port to get into the service panel for OpenStack",
+            "type" : "integer",
+            "required" : true
         },
         {
             "title" : "Service User",
-            "name" : "service_user",
+            "name" : "service_username",
             "description" : "The user to get into the service panel for OpenStack",
             "type" : "string",
-            "required" : false
-        },
-        {
-            "title" : "Service Timeout",
-            "name" : "service_timeout",
-            "description" : "The timeout to get into the service panel for OpenStack",
-            "type" : "integer",
-            "required" : false
+            "required" : true
         },
         {
             "title" : "Service Password",
