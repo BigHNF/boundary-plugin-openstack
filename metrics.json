@@ -4,7 +4,7 @@
     "description": "Average openstack CPU utilization on the running node.",
     "unit": "number",
     "displayNameShort": "OS CPU util avg",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
@@ -13,7 +13,7 @@
     "description": "Summary of total openstack CPU utilization.",
     "unit": "number",
     "displayNameShort": "OS CPU util sum",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -22,7 +22,7 @@
     "description": "The minimum openstack CPU utilization by VMs running on the node",
     "unit": "number",
     "displayNameShort": "OS CPU util min",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "min"
   },
@@ -31,7 +31,7 @@
     "description": "The maximum openstack CPU utilization by VMs running on the node.",
     "unit": "number",
     "displayNameShort": "OS CPU util max",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "max"
   },
@@ -40,7 +40,7 @@
     "description": "Avarage CPU time used by the openstack VMs",
     "unit": "number",
     "displayNameShort": "OS CPU AVG",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
@@ -49,7 +49,7 @@
     "description": "Total CPU time used by the openstack VMs.",
     "unit": "number",
     "displayNameShort": "OS CPU SUM",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -58,7 +58,7 @@
     "description": "Summary of running instances in openstack.",
     "unit": "number",
     "displayNameShort": "OS INST SUM",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -67,7 +67,7 @@
     "description": "The maximum number of instances started.",
     "unit": "number",
     "displayNameShort": "OS INST MAX",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "max"
   },
@@ -76,7 +76,7 @@
     "description": "The summary of allocated memory by all VMs on the node.",
     "unit": "number",
     "displayNameShort": "OS MEM SUM",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -85,7 +85,7 @@
     "description": "The average allocated memory by all VMs on the node.",
     "unit": "number",
     "displayNameShort": "OS MEM AVG",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
@@ -94,7 +94,7 @@
     "description": "Volume of RAM used by the instance from the amount of its allocated memory.",
     "unit": "number",
     "displayNameShort": "OS MEM usage SUM",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -103,7 +103,7 @@
     "description": "Volume of RAM used by the instance from the amount of its allocated memory..",
     "unit": "number",
     "displayNameShort": "OS MEM usage AVG",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
@@ -112,7 +112,7 @@
     "description": "Summary of created volumes",
     "unit": "number",
     "displayNameShort": "OS VOL SUM",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -121,7 +121,7 @@
     "description": "Average of created volumes by the VMs running on the node.",
     "unit": "number",
     "displayNameShort": "OS VOL AVG",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
@@ -130,7 +130,7 @@
     "description": "Summary of created images on the image service node.",
     "unit": "number",
     "displayNameShort": "OS IMG SUM",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -139,7 +139,7 @@
     "description": "The average created images on the image service node.",
     "unit": "number",
     "displayNameShort": "OS IMG AVG",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
@@ -148,7 +148,7 @@
     "description": "The total amount of space used by the created images.",
     "unit": "number",
     "displayNameShort": "OS IMG size SUM",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -157,7 +157,7 @@
     "description": "Average amount of space used by the created images",
     "unit": "number",
     "displayNameShort": "OS IMG size AVG",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
@@ -166,7 +166,7 @@
     "description": "The total amount of disk read rate on all VMs running on the node",
     "unit": "number",
     "displayNameShort": "OS DSK R rate SUM",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -175,7 +175,7 @@
     "description": "Average amount of disk read rate on all VMs running on the node.",
     "unit": "number",
     "displayNameShort": "OS DSK R rate AVG",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
@@ -184,7 +184,7 @@
     "description": "The total amount of disk write rate on all VMs running on the node.",
     "unit": "number",
     "displayNameShort": "OS DSK W rate SUM",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -193,7 +193,7 @@
     "description": "Average amount of disk write rate on all VMs running on the node.",
     "unit": "number",
     "displayNameShort": "OS DSK W rate AVG",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
@@ -202,7 +202,7 @@
     "description": "The total amount of network incoming bytes to all VMs running on the node",
     "unit": "number",
     "displayNameShort": "OS NET in byte SUM",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -211,7 +211,7 @@
     "description": "Average amount of network incoming bytes to all VMs running on the node.",
     "unit": "number",
     "displayNameShort": "OS NET in byte AVG",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
@@ -220,7 +220,7 @@
     "description": "The total amount of network outgoing bytes from all VMs running on the node",
     "unit": "number",
     "displayNameShort": "OS NET out byte SUM",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
@@ -229,8 +229,27 @@
     "description": "Average amount of network outgoing bytes from all VMs running on the node.",
     "unit": "number",
     "displayNameShort": "OS NET out byte AVG",
-    "defaultResolutionMS": 1000,
+    "defaultResolutionMS": 60000,
+    "isDisabled": 0,
+    "defaultAggregate": "avg"
+  },
+  "OS_MEMORY_RESIDENT_SUM": {
+    "displayName": "Total memory used",
+    "description": "Resident memory is important to see the amount of memory sum consumed by the Virtual Machine from the Physical Host",
+    "unit": "number",
+    "displayNameShort": "OS MEM Resident usage SUM",
+    "defaultResolutionMS": 60000,
+    "isDisabled": 0,
+    "defaultAggregate": "sum"
+  },
+  "OS_MEMORY_RESIDENT_AVG": {
+    "displayName": "Average memory used",
+    "description": "Resident memory is important to see the amount of memory avg consumed by the Virtual Machine from the Physical Host.",
+    "unit": "number",
+    "displayNameShort": "OS MEM Resident usage AVG",
+    "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
   }
 }
+

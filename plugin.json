@@ -37,7 +37,9 @@
     "OS_NETWORK_IN_BYTES_SUM",
     "OS_NETWORK_IN_BYTES_AVG",
     "OS_NETWORK_OUT_BYTES_SUM",
-    "OS_NETWORK_OUT_BYTES_AVG"
+    "OS_NETWORK_OUT_BYTES_AVG",
+    "OS_MEMORY_RESIDENT_SUM",
+    "OS_MEMORY_RESIDENT_AVG"
   ],
   "dashboards": [
     {
@@ -88,10 +90,11 @@
     {
       "title": "Poll Interval (ms)",
       "name": "pollInterval",
-      "description": "The Poll Interval in milliseconds to poll for metrics. Ex. 1000",
+      "description": "The Poll Interval in milliseconds to poll for metrics. Ex. 60000",
       "type": "integer",
-      "default": 1000,
+      "default": 60000,
       "required": true
     }
   ]
 }
+
