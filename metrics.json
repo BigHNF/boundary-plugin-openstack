@@ -234,7 +234,7 @@
     "defaultAggregate": "avg"
   },
   "OS_MEMORY_RESIDENT_SUM": {
-    "displayName": "Total memory used",
+    "displayName": "Total memory resident  used",
     "description": "Resident memory is important to see the amount of memory sum consumed by the Virtual Machine from the Physical Host",
     "unit": "number",
     "displayNameShort": "OS MEM Resident usage SUM",
@@ -243,7 +243,7 @@
     "defaultAggregate": "sum"
   },
   "OS_MEMORY_RESIDENT_AVG": {
-    "displayName": "Average memory used",
+    "displayName": "Average memory resident used",
     "description": "Resident memory is important to see the amount of memory avg consumed by the Virtual Machine from the Physical Host.",
     "unit": "number",
     "displayNameShort": "OS MEM Resident usage AVG",
