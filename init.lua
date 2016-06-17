@@ -12,8 +12,6 @@ local url = require('url')
 require('fun')(true)
 
 local params = framework.boundary.param
---params.name = 'Boundary OpenStack plugin'
---params.version = '1.0'
 
 local HttpDataSource = DataSource:extend()
 local RandomDataSource = DataSource:extend()
@@ -149,6 +147,7 @@ mapping['disk.read.requests.rate'] = {sum = 'OS_DISK_READ_RATE_SUM', avg = 'OS_D
 mapping['disk.write.requests.rate'] = {sum = 'OS_DISK_WRITE_RATE_SUM', avg = 'OS_DISK_WRITE_RATE_AVG'}
 mapping['network.incoming.bytes'] = {sum = 'OS_NETWORK_IN_BYTES_SUM', avg = 'OS_NETWORK_IN_BYTES_AVG'}
 mapping['network.outgoing.bytes'] = {sum = 'OS_NETWORK_OUT_BYTES_SUM', avg = 'OS_NETWORK_OUT_BYTES_AVG'}
+mapping['memory.resident'] = {sum = 'OS_MEMORY_RESIDENT_SUM', avg = 'OS_MEMORY_RESIDENT_AVG'}
 
 local OpenStackDataSource = DataSource:extend()
 
