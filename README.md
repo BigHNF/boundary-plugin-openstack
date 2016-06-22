@@ -35,13 +35,14 @@ None
 
 #### For All Versions
 
-|Field Name      |Description                                                |
-|:---------------|:----------------------------------------------------------|
-|service_tenant  |The tenant to get into the service panel for OpenStack     |
-|service_endpoint|The endpoint to get into the service panel for OpenStack   |
-|service_user    |The user to get into the service panel for OpenStack       |
-|service_timeout |The timeout to get into the service panel for OpenStack    |
-|service_password|The password to get into the service panel for OpenStack   |
+|Field Name      |Description                                                             |
+|:---------------|:-----------------------------------------------------------------------|
+|service_tenant  |The tenant to get into the service panel for OpenStack                  |
+|service_endpoint|The endpoint to get into the service panel for OpenStack                |
+|service_user    |The user to get into the service panel for OpenStack                    |
+|service_timeout |The timeout to get into the service panel for OpenStack                 |
+|service_password|The password to get into the service panel for OpenStack                |
+|pollInterval    |The polling interval (in milliseconds) to call the openstack collector  |
 
 ### Metrics Collected
 
