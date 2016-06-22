@@ -1,4 +1,4 @@
-# Boundary Openstack Plugin
+# TrueSight Pulse Openstack Plugin
 
 This plugin grabs metrics from the openstack node where it is started and parses the data to be able to integrate into boundary. To be able to start, ceilometer should be well configured on the machine and credentials needs to be created.
 Additional metrics can be added from the ceilometer by editing the plugin.py and adding or replacing different mapping tuple objects.
@@ -12,8 +12,8 @@ Additional metrics can be added from the ceilometer by editing the plugin.py and
 | Supported |   v   |         |         |      |
 
 #### Openstack
-- Version Juno+
-- Ceilometer > 0
+- Version Mitaka+
+- Ceilometer > 2.3.0
 
 #### Boundary Meter Versions V4.0 or later
 
@@ -24,10 +24,8 @@ Additional metrics can be added from the ceilometer by editing the plugin.py and
 
 |  Runtime | node.js | Python | Java |
 |:---------|:-------:|:------:|:----:|
-| Required |         |    +   |      |
+| Required |         |        |      |
 
-- [How to install Python?](https://help.boundary.com/hc/articles/202270132)
-- Python libraries: ceilometerclient (this is automatically installed if ceilometer is installed)
 
 ### Plugin Setup
 
