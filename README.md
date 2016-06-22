@@ -57,10 +57,6 @@ None
 |OS_CPU_SUM              |Total CPU time used by the openstack VMs                                   |
 |OS_INSTANCE_SUM         |Summary of running instances in openstack                                  |
 |OS_INSTANCE_MAX         |The maximum number of instances started                                    |
-|OS_MEMORY_SUM           |The summary of allocated memory by all VMs on the node                     |
-|OS_MEMORY_AVG           |The average allocated memory by all VMs on the node                        |
-|OS_MEMORY_USAGE_SUM     |Volume of RAM used by the instance from the amount of its allocated memory |
-|OS_MEMORY_USAGE_SUM     |Volume of RAM used by the instance from the amount of its allocated memory |
 |OS_VOLUME_SUM           |Summary of created volumes                                                 |
 |OS_VOLUME_AVG           |Average of created volumes by the VMs running on the node                  |
 |OS_IMAGE_SIZE_SUM       |The total amount of space used by the created images                       |
