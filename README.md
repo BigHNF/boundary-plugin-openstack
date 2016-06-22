@@ -70,5 +70,5 @@ None
 |OS_NETWORK_IN_BYTES_AVG |Average amount of network incoming bytes to all VMs running on the node    |
 |OS_NETWORK_OUT_BYTES_SUM|The total amount of network outgoing bytes from all VMs running on the node|
 |OS_NETWORK_OUT_BYTES_AVG|Average amount of network outgoing bytes from all VMs running on the node  |
-|OS_MEMORY_RESIDENT_SUM  |The resident memory sum consumed by the VM from the Physical Host          |
-|OS_MEMORY_RESIDENT_AVG  |The resident memory avg consumed by the VM from the Physical Host          |
+|OS_MEMORY_RESIDENT_SUM  |The resident memory sum consumed by the VMs from the Physical Host         |
+|OS_MEMORY_RESIDENT_AVG  |The resident memory avg consumed by the VMs from the Physical Host         |
