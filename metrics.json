@@ -2,7 +2,7 @@
   "OS_CPUUTIL_AVG": {
     "displayName": "Openstack CPU utilization average",
     "description": "Average openstack CPU utilization on the running node.",
-    "unit": "number",
+    "unit": "percent",
     "displayNameShort": "OS CPU util avg",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
@@ -11,7 +11,7 @@
   "OS_CPUUTIL_SUM": {
     "displayName": "Openstack CPU utilization sum",
     "description": "Summary of total openstack CPU utilization.",
-    "unit": "number",
+    "unit": "percent",
     "displayNameShort": "OS CPU util sum",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
@@ -20,7 +20,7 @@
   "OS_CPUUTIL_MIN": {
     "displayName": "Openstack CPU utilization min",
     "description": "The minimum openstack CPU utilization by VMs running on the node",
-    "unit": "number",
+    "unit": "percent",
     "displayNameShort": "OS CPU util min",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
@@ -29,7 +29,7 @@
   "OS_CPUUTIL_MAX": {
     "displayName": "Openstack CPU utilization max",
     "description": "The maximum openstack CPU utilization by VMs running on the node.",
-    "unit": "number",
+    "unit": "percent",
     "displayNameShort": "OS CPU util max",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
@@ -38,7 +38,7 @@
   "OS_CPU_AVG": {
     "displayName": "Average CPU time used",
     "description": "Avarage CPU time used by the openstack VMs",
-    "unit": "number",
+    "unit": "percent",
     "displayNameShort": "OS CPU AVG",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
