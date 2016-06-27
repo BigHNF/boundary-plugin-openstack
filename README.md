@@ -12,19 +12,19 @@ Additional metrics can be added from the ceilometer by editing the plugin.py and
 | Supported |   v   |         |         |      |
 
 #### Openstack
-- Version Mitaka+
-- Ceilometer > 2.3.0
+- Openstack version Mitaka
+- Ceilometer >= 2.3.0
 
-#### Boundary Meter Versions V4.0 or later
+#### For Centos/RHEL/Ubuntu
+
+  To setup Openstack on different os platforms
+- To install Openstack on centos v7.x/rhel v7.x [see instructions](https://www.rdoproject.org/install/quickstart/)
+- To install Openstack on ubuntu v14.04(trusty) [see instructions](http://docs.openstack.org/developer/devstack/guides/single-machine.html)
+
+#### TrueSight Pulse Meter versions v4.0 or later
 
 - To install new meter go to Settings->Installation or [see instructons|https://help.boundary.com/hc/en-us/sections/200634331-Installation]. 
 - To upgrade the meter to the latest version - [see instructons|https://help.boundary.com/hc/en-us/articles/201573102-Upgrading-the-Boundary-Meter].
-
-#### For Boundary Meter less than V4.0
-
-|  Runtime | node.js | Python | Java |
-|:---------|:-------:|:------:|:----:|
-| Required |         |        |      |
 
 
 ### Plugin Setup
