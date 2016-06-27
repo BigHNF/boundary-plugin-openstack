@@ -278,11 +278,12 @@ framework.Plugin = Plugin
 framework.boundary = boundary
 
 function Plugin:poll()
-	
+
+		
 	self:emit('before_poll')
 	
 	self:onPoll()
-
+	
 	self:emit('after_poll')
 	timer.setTimeout(self.pollInterval, function () self.poll(self) end)
 end

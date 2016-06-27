@@ -1,83 +1,100 @@
 {
-    "description" : "Metric collector for Openstack",
-    "icon" : "icon.png",
-    "command" : "python plugin.py",
-    "postInstall" : "",
-    "command_lua" : "boundary-meter init.lua",
-    "postInstall_lua" : "",
-    "ignore" : "",
-
-    "metrics" : [
-        "OS_CPUUTIL_AVG",
-        "OS_CPUUTIL_SUM",
-        "OS_CPUUTIL_MIN",
-        "OS_CPUUTIL_MAX",
-        "OS_CPU_AVG",
-        "OS_CPU_SUM",
-        "OS_INSTANCE_SUM",
-        "OS_INSTANCE_MAX",
-        "OS_MEMORY_SUM",
-        "OS_MEMORY_AVG",
-        "OS_MEMORY_USAGE_SUM",
-        "OS_MEMORY_USAGE_AVG",
-        "OS_VOLUME_SUM",
-        "OS_VOLUME_AVG",
-        "OS_IMAGE_SUM",
-        "OS_IMAGE_AVG",
-        "OS_IMAGE_SIZE_SUM",
-        "OS_IMAGE_SIZE_AVG",
-        "OS_DISK_READ_RATE_SUM",
-        "OS_DISK_READ_RATE_AVG",
-        "OS_DISK_WRITE_RATE_SUM",
-        "OS_DISK_WRITE_RATE_AVG",
-        "OS_NETWORK_IN_BYTES_SUM",
-        "OS_NETWORK_IN_BYTES_AVG",
-        "OS_NETWORK_OUT_BYTES_SUM",
-        "OS_NETWORK_OUT_BYTES_AVG"
-    ],
-
-    "dashboards" : [
-        {
-            "name" : "Openstack",
-            "layout" : "d-w=4&d-h=4&d-pad=5&d-bg=none&d-g-OS_CPUUTIL_AVG=0-0-1-1&d-g-OS_CPUUTIL_SUM=1-0-1-1&d-g-OS_CPUUTIL_MIN=0-1-1-1&d-g-OS_CPUUTIL_MAX=0-2-1-1&d-g-OS_CPU_AVG=1-1-1-1&d-g-OS_CPU_SUM=1-2-1-1&d-g-OS_INSTANCE_SUM=2-2-1-1&d-g-OS_INSTANCE_MAX=0-3-1-1&d-g-OS_MEMORY_SUM=1-3-1-1&d-g-OS_MEMORY_AVG=2-3-1-1"
-        }
-    ],
-
-    "paramSchema" : [
-        {
-            "title" : "Service Tenant",
-            "name" : "service_tenant",
-            "description" : "The tenant to get into the service panel for OpenStack",
-            "type" : "string",
-            "required" : false
-        },
-        {
-            "title" : "Service Endpoint",
-            "name" : "service_endpoint",
-            "description" : "The endpoint to get into the service panel for OpenStack",
-            "type" : "string",
-            "required" : false
-        },
-        {
-            "title" : "Service User",
-            "name" : "service_user",
-            "description" : "The user to get into the service panel for OpenStack",
-            "type" : "string",
-            "required" : false
-        },
-        {
-            "title" : "Service Timeout",
-            "name" : "service_timeout",
-            "description" : "The timeout to get into the service panel for OpenStack",
-            "type" : "integer",
-            "required" : false
-        },
-        {
-            "title" : "Service Password",
-            "name" : "service_password",
-            "description" : "The password to get into the service panel for OpenStack",
-            "type" : "password",
-            "required" : true
-        }
-    ]
+  "name": "Truesight Pulse OpenStack plugin",
+  "version": "0.9.2",
+  "meterVersionRequired": "4.2.0-611",
+  "unsupportedPlatforms": [],
+  "tags": "Openstack",
+  "description": "Truesight Pulse Plugin for Openstack",
+  "icon": "icon.png",
+  "command": "python plugin.py",
+  "postInstall": "",
+  "command_lua": "boundary-meter init.lua",
+  "postInstall_lua": "",
+  "ignore": "",
+  "metrics": [
+    "OS_CPUUTIL_AVG",
+    "OS_CPUUTIL_SUM",
+    "OS_CPUUTIL_MIN",
+    "OS_CPUUTIL_MAX",
+    "OS_CPU_AVG",
+    "OS_CPU_SUM",
+    "OS_INSTANCE_SUM",
+    "OS_INSTANCE_MAX",
+    "OS_MEMORY_SUM",
+    "OS_MEMORY_AVG",
+    "OS_MEMORY_USAGE_SUM",
+    "OS_MEMORY_USAGE_AVG",
+    "OS_VOLUME_SUM",
+    "OS_VOLUME_AVG",
+    "OS_IMAGE_SUM",
+    "OS_IMAGE_AVG",
+    "OS_IMAGE_SIZE_SUM",
+    "OS_IMAGE_SIZE_AVG",
+    "OS_DISK_READ_RATE_SUM",
+    "OS_DISK_READ_RATE_AVG",
+    "OS_DISK_WRITE_RATE_SUM",
+    "OS_DISK_WRITE_RATE_AVG",
+    "OS_NETWORK_IN_BYTES_SUM",
+    "OS_NETWORK_IN_BYTES_AVG",
+    "OS_NETWORK_OUT_BYTES_SUM",
+    "OS_NETWORK_OUT_BYTES_AVG",
+    "OS_MEMORY_RESIDENT_SUM",
+    "OS_MEMORY_RESIDENT_AVG"
+  ],
+  "dashboards": [
+    {
+      "name": "Openstack Dashborad -1",
+      "layout": "d-w=4&d-h=3&d-pad=5&d-light=0&d-bg=none&d-g-OS_CPUUTIL_AVG=0-0-1-1&d-g-OS_CPUUTIL_SUM=1-0-1-1&d-g-OS_CPU_SUM=0-1-1-1&d-g-OS_CPUUTIL_MAX=3-0-1-1&d-g-OS_CPUUTIL_MIN=2-0-1-1&d-g-OS_CPU_AVG=1-1-1-1&d-g-OS_INSTANCE_MAX=2-1-1-1&d-g-OS_INSTANCE_SUM=3-1-1-1&d-g-OS_MEMORY_RESIDENT_AVG=0-2-1-1&d-g-OS_MEMORY_RESIDENT_SUM=1-2-1-1"
+    },
+    {
+      "name": "Openstack Dashborad -2",
+      "layout": "d-w=4&d-h=3&d-pad=5&d-light=0&d-bg=none&d-g-OS_VOLUME_AVG=0-0-1-1&d-g-OS_VOLUME_SUM=1-0-1-1&d-g-OS_IMAGE_AVG=2-0-1-1&d-g-OS_IMAGE_SUM=3-0-1-1&d-g-OS_IMAGE_SIZE_AVG=0-1-1-1&d-g-OS_IMAGE_SIZE_SUM=1-1-1-1&d-g-OS_DISK_READ_RATE_AVG=2-1-1-1-t&d-g-OS_DISK_READ_RATE_SUM=2-1-1-1-b&d-g-OS_DISK_WRITE_RATE_AVG=3-1-1-1-t&d-g-OS_DISK_WRITE_RATE_SUM=3-1-1-1-b&d-g-OS_NETWORK_IN_BYTES_AVG=0-2-1-1-t&d-g-OS_NETWORK_IN_BYTES_SUM=0-2-1-1-b&d-g-OS_NETWORK_OUT_BYTES_AVG=1-2-1-1-t&d-g-OS_NETWORK_OUT_BYTES_SUM=1-2-1-1-b"
+    }
+  ],
+  "paramSchema": [
+    {
+      "title": "Service Tenant",
+      "name": "service_tenant",
+      "description": "The tenant to get into the service panel for OpenStack",
+      "type": "string",
+      "required": true
+    },
+    {
+      "title": "Service Endpoint",
+      "name": "service_host",
+      "description": "The endpoint(host name) to get into the service panel for OpenStack",
+      "type": "string",
+      "required": true
+    },
+    {
+      "title": "Service Port",
+      "name": "service_port",
+      "description": "The endpoint port to get into the service panel for OpenStack",
+      "type": "integer",
+      "required": true
+    },
+    {
+      "title": "Service User",
+      "name": "service_username",
+      "description": "The user to get into the service panel for OpenStack",
+      "type": "string",
+      "required": true
+    },
+    {
+      "title": "Service Password",
+      "name": "service_password",
+      "description": "The password to get into the service panel for OpenStack",
+      "type": "password",
+      "required": true
+    },
+    {
+      "title": "Poll Interval (ms)",
+      "name": "pollInterval",
+      "description": "The Poll Interval in milliseconds to poll for metrics. Ex. 60000",
+      "type": "integer",
+      "default": 60000,
+      "required": true
+    }
+  ]
 }
+

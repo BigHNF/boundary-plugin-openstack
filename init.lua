@@ -12,8 +12,6 @@ local url = require('url')
 require('fun')(true)
 
 local params = framework.boundary.param
-params.name = 'Boundary OpenStack plugin'
-params.version = '1.0'
 
 local HttpDataSource = DataSource:extend()
 local RandomDataSource = DataSource:extend()
@@ -58,12 +56,10 @@ end
 
 function KeystoneClient:buildData(tenantName, username, password)
 	local data = json.stringify({auth = { tenantName = tenantName, passwordCredentials ={username = username,  password = password}} })
-
 	return data
 end
 
 function KeystoneClient:getToken(callback)
-	
 	local data = self:buildData(self.tenantName, self.username, self.password)
 	local path = '/v2.0/tokens'
 	local options = {
@@ -71,7 +67,6 @@ function KeystoneClient:getToken(callback)
 		port = self.port,
 		path = path
 	}
-
 	local req = post(options, data, callback, 'json') 
 	-- Propagate errors 
 	req:on('error', function (err) self:emit(err) end)
@@ -88,6 +83,7 @@ function getAdminUrl(endpoint)
 end
 
 function getToken(data)
+        
 	return get('id', (get('token',(get('access', data)))))
 end
 
@@ -95,7 +91,7 @@ end
 local CeilometerClient = Emitter:extend()
 
 function CeilometerClient:initialize(host, port, tenant, username, password)
-	self.host = host
+        self.host = host
 	self.port = port
 	self.tenant = tenant
 	self.username = username
@@ -103,13 +99,11 @@ function CeilometerClient:initialize(host, port, tenant, username, password)
 end
 
 
-function CeilometerClient:getMetric(metric, period, callback)
-
-	local client = KeystoneClient:new(self.host, self.port, self.tenant, self.username, self.password)
+function CeilometerClient:getMetric(metric, period, callback)	
+        local client = KeystoneClient:new(self.host, self.port, self.tenant, self.username, self.password)
 	client:propagate('error', self)
-
-	client:getToken(function (data)
-		local hasError = get('error', data)
+        client:getToken(function (data)
+                local hasError = get('error', data)
 		if hasError ~= nil then
 			-- Propagate errors
 			self:emit('error', data)
@@ -121,8 +115,7 @@ function CeilometerClient:getMetric(metric, period, callback)
 			local headers = {}
 			headers['X-Auth-Token'] = token
 			local path = '/v2/meters/' .. metric .. '/statistics?period=' .. period	
-			local urlParts = url.parse(adminUrl)
-			
+			local urlParts = url.parse(adminUrl)	
 			local options = {
 				host = urlParts.hostname,
 				port = urlParts.port,
@@ -147,18 +140,18 @@ mapping['cpu'] = {avg = 'OS_CPU_AVG', sum = 'OS_CPU_SUM'}
 mapping['instance'] = {sum = 'OS_INSTANCE_SUM', max = 'OS_INSTANCE_MAX'}
 mapping['memory'] = {sum = 'OS_MEMORY_SUM', avg = 'OS_MEMORY_AVG'}
 mapping['memory.usage'] = {sum = 'OS_MEMORY_USAGE_SUM', avg = 'OS_MEMORY_USAGE_AVG'}
-mapping['volume'] = {sum = 'OS_VOLUME_SUM', avg = 'OS_VOLUME_AVG'}
+mapping['volume.size'] = {avg  = 'OS_VOLUME_AVG', sum = 'OS_VOLUME_SUM'}
 mapping['image'] = {sum = 'OS_IMAGE_SUM', avg = 'OS_IMAGE_AVG'}
 mapping['image.size'] = {avg = 'OS_IMAGE_SIZE_AVG', sum = 'OS_IMAGE_SIZE_SUM'}
 mapping['disk.read.requests.rate'] = {sum = 'OS_DISK_READ_RATE_SUM', avg = 'OS_DISK_READ_RATE_AVG'}
 mapping['disk.write.requests.rate'] = {sum = 'OS_DISK_WRITE_RATE_SUM', avg = 'OS_DISK_WRITE_RATE_AVG'}
 mapping['network.incoming.bytes'] = {sum = 'OS_NETWORK_IN_BYTES_SUM', avg = 'OS_NETWORK_IN_BYTES_AVG'}
 mapping['network.outgoing.bytes'] = {sum = 'OS_NETWORK_OUT_BYTES_SUM', avg = 'OS_NETWORK_OUT_BYTES_AVG'}
+mapping['memory.resident'] = {sum = 'OS_MEMORY_RESIDENT_SUM', avg = 'OS_MEMORY_RESIDENT_AVG'}
 
 local OpenStackDataSource = DataSource:extend()
 
 function OpenStackDataSource:initialize(host, port, tenant, username, password)
-
 	self.host = host
 	self.port = port
 	self.tenant = tenant
@@ -200,6 +193,5 @@ function plugin:onParseValues(metric, data)
 
 	return result 
 end
-
 plugin:poll()
 

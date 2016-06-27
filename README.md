@@ -1,4 +1,4 @@
-# Boundary Openstack Plugin
+# TrueSight Pulse Openstack Plugin
 
 This plugin grabs metrics from the openstack node where it is started and parses the data to be able to integrate into boundary. To be able to start, ceilometer should be well configured on the machine and credentials needs to be created.
 Additional metrics can be added from the ceilometer by editing the plugin.py and adding or replacing different mapping tuple objects.
@@ -12,8 +12,8 @@ Additional metrics can be added from the ceilometer by editing the plugin.py and
 | Supported |   v   |         |         |      |
 
 #### Openstack
-- Version Juno+
-- Ceilometer > 0
+- Version Mitaka+
+- Ceilometer > 2.3.0
 
 #### Boundary Meter Versions V4.0 or later
 
@@ -24,10 +24,8 @@ Additional metrics can be added from the ceilometer by editing the plugin.py and
 
 |  Runtime | node.js | Python | Java |
 |:---------|:-------:|:------:|:----:|
-| Required |         |    +   |      |
+| Required |         |        |      |
 
-- [How to install Python?](https://help.boundary.com/hc/articles/202270132)
-- Python libraries: ceilometerclient (this is automatically installed if ceilometer is installed)
 
 ### Plugin Setup
 
@@ -37,13 +35,14 @@ None
 
 #### For All Versions
 
-|Field Name      |Description                                                |
-|:---------------|:----------------------------------------------------------|
-|service_tenant  |The tenant to get into the service panel for OpenStack     |
-|service_endpoint|The endpoint to get into the service panel for OpenStack   |
-|service_user    |The user to get into the service panel for OpenStack       |
-|service_timeout |The timeout to get into the service panel for OpenStack    |
-|service_password|The password to get into the service panel for OpenStack   |
+|Field Name      |Description                                                             |
+|:---------------|:-----------------------------------------------------------------------|
+|service_tenant  |The tenant to get into the service panel for OpenStack                  |
+|service_endpoint|The endpoint to get into the service panel for OpenStack                |
+|service_user    |The user to get into the service panel for OpenStack                    |
+|service_timeout |The timeout to get into the service panel for OpenStack                 |
+|service_password|The password to get into the service panel for OpenStack                |
+|pollInterval    |The polling interval (in milliseconds) to call the openstack collector  |
 
 ### Metrics Collected
 
@@ -59,10 +58,6 @@ None
 |OS_CPU_SUM              |Total CPU time used by the openstack VMs                                   |
 |OS_INSTANCE_SUM         |Summary of running instances in openstack                                  |
 |OS_INSTANCE_MAX         |The maximum number of instances started                                    |
-|OS_MEMORY_SUM           |The summary of allocated memory by all VMs on the node                     |
-|OS_MEMORY_AVG           |The average allocated memory by all VMs on the node                        |
-|OS_MEMORY_USAGE_SUM     |Volume of RAM used by the instance from the amount of its allocated memory |
-|OS_MEMORY_USAGE_SUM     |Volume of RAM used by the instance from the amount of its allocated memory |
 |OS_VOLUME_SUM           |Summary of created volumes                                                 |
 |OS_VOLUME_AVG           |Average of created volumes by the VMs running on the node                  |
 |OS_IMAGE_SIZE_SUM       |The total amount of space used by the created images                       |
@@ -75,3 +70,5 @@ None
 |OS_NETWORK_IN_BYTES_AVG |Average amount of network incoming bytes to all VMs running on the node    |
 |OS_NETWORK_OUT_BYTES_SUM|The total amount of network outgoing bytes from all VMs running on the node|
 |OS_NETWORK_OUT_BYTES_AVG|Average amount of network outgoing bytes from all VMs running on the node  |
+|OS_MEMORY_RESIDENT_SUM  |The resident memory sum consumed by the VMs from the Physical Host         |
+|OS_MEMORY_RESIDENT_AVG  |The resident memory avg consumed by the VMs from the Physical Host         |
