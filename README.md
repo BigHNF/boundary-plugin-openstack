@@ -29,8 +29,10 @@ Additional metrics can be added from the ceilometer by editing the plugin.py and
 
 ### Plugin Setup
 
-None
+To get ceilometer credentials such as  host and port and etc. Follow the instructions below:
 
+#### For CentOS 7.x & RHEL 7.x and Ubuntu v14.04(trusty)
+     View  /etc/ceilometer/ceilometer.conf and To get ceilometer credentials
 ### Plugin Configuration Fields
 
 #### For All Versions
