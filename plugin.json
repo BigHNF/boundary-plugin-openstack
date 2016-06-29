@@ -6,7 +6,7 @@
   "tags": "Openstack",
   "description": "Truesight Pulse Plugin for Openstack",
   "icon": "icon.png",
-  "command": "python plugin.py",
+  "command": "",
   "postInstall": "",
   "command_lua": "boundary-meter init.lua",
   "postInstall_lua": "",
