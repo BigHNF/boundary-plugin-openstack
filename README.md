@@ -28,10 +28,13 @@ Additional metrics can be added from the ceilometer by editing the plugin.py and
 
 ### Plugin Setup
 
-To get ceilometer credentials such as  host, port and more. Follow the instructions below:
-
 #### For CentOS 7.x & RHEL 7.x and Ubuntu v14.04(trusty)
-     Default path "/etc/ceilometer/ceilometer.conf" to get ceilometer credentials.
+To get ceilometer configuration such as host, port and more, goto below file.
+```
+Default path for ceilometer configuration file is "/etc/ceilometer/ceilometer.conf"
+```
+
+     
 ### Plugin Configuration Fields
 
 
