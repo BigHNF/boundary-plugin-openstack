@@ -11,7 +11,6 @@ Additional metrics can be added from the ceilometer by editing the plugin.py and
 |:----------|:-----:|:-------:|:-------:|:----:|
 | Supported |   v   |         |         |      |
 
-#### Openstack
 - Openstack version Mitaka
 - Ceilometer >= 2.3.0
 
