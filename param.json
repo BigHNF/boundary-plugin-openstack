@@ -1,8 +1,8 @@
 {
-  "service_tenant" : "services",
-  "service_host" : "clm-pun-022974.bmc.com",
+  "service_tenant" : "change_me",
+  "service_host" : "change_me",
   "service_port" :5000,
-  "service_username" : "ceilometer",
-  "service_password" : "9a09e0e292df4552",
-  "pollInterval" : 1000
+  "service_username" : "change_me",
+  "service_password" : "change_me",
+  "pollInterval" : 60000
 }
