@@ -6,7 +6,7 @@
   "tags": "Openstack",
   "description": "Truesight Pulse Plugin for Openstack",
   "icon": "icon.png",
-  "command": "python plugin.py",
+  "command": "",
   "postInstall": "",
   "command_lua": "boundary-meter init.lua",
   "postInstall_lua": "",
@@ -43,11 +43,11 @@
   ],
   "dashboards": [
     {
-      "name": "Openstack Dashborad -1",
+      "name": "Openstack Basic",
       "layout": "d-w=4&d-h=3&d-pad=5&d-light=0&d-bg=none&d-g-OS_CPUUTIL_AVG=0-0-1-1&d-g-OS_CPUUTIL_SUM=1-0-1-1&d-g-OS_CPU_SUM=0-1-1-1&d-g-OS_CPUUTIL_MAX=3-0-1-1&d-g-OS_CPUUTIL_MIN=2-0-1-1&d-g-OS_CPU_AVG=1-1-1-1&d-g-OS_INSTANCE_MAX=2-1-1-1&d-g-OS_INSTANCE_SUM=3-1-1-1&d-g-OS_MEMORY_RESIDENT_AVG=0-2-1-1&d-g-OS_MEMORY_RESIDENT_SUM=1-2-1-1"
     },
     {
-      "name": "Openstack Dashborad -2",
+      "name": "Openstack Advanced",
       "layout": "d-w=4&d-h=3&d-pad=5&d-light=0&d-bg=none&d-g-OS_VOLUME_AVG=0-0-1-1&d-g-OS_VOLUME_SUM=1-0-1-1&d-g-OS_IMAGE_AVG=2-0-1-1&d-g-OS_IMAGE_SUM=3-0-1-1&d-g-OS_IMAGE_SIZE_AVG=0-1-1-1&d-g-OS_IMAGE_SIZE_SUM=1-1-1-1&d-g-OS_DISK_READ_RATE_AVG=2-1-1-1-t&d-g-OS_DISK_READ_RATE_SUM=2-1-1-1-b&d-g-OS_DISK_WRITE_RATE_AVG=3-1-1-1-t&d-g-OS_DISK_WRITE_RATE_SUM=3-1-1-1-b&d-g-OS_NETWORK_IN_BYTES_AVG=0-2-1-1-t&d-g-OS_NETWORK_IN_BYTES_SUM=0-2-1-1-b&d-g-OS_NETWORK_OUT_BYTES_AVG=1-2-1-1-t&d-g-OS_NETWORK_OUT_BYTES_SUM=1-2-1-1-b"
     }
   ],
