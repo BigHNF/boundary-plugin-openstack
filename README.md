@@ -17,7 +17,6 @@ Additional metrics can be added from the ceilometer by editing the plugin.py and
 
 #### For Centos/RHEL/Ubuntu
 
-  To setup Openstack on different os platforms
 - To install Openstack on centos v7.x/rhel v7.x [see instructions](https://www.rdoproject.org/install/quickstart/)
 - To install Openstack on ubuntu v14.04(trusty) [see instructions](http://docs.openstack.org/developer/devstack/guides/single-machine.html)
 
@@ -29,13 +28,12 @@ Additional metrics can be added from the ceilometer by editing the plugin.py and
 
 ### Plugin Setup
 
-To get ceilometer credentials such as  host and port and etc. Follow the instructions below:
+To get ceilometer credentials such as  host, port and more. Follow the instructions below:
 
 #### For CentOS 7.x & RHEL 7.x and Ubuntu v14.04(trusty)
-     Default path (/etc/ceilometer/ceilometer.conf) to get ceilometer credentials.
+     Default path "/etc/ceilometer/ceilometer.conf" to get ceilometer credentials.
 ### Plugin Configuration Fields
 
-#### For All Versions
 
 |Field Name      |Description                                                             |
 |:---------------|:-----------------------------------------------------------------------|
@@ -48,7 +46,6 @@ To get ceilometer credentials such as  host and port and etc. Follow the instruc
 
 ### Metrics Collected
 
-#### For All Versions
 
 |Metric Name             |Description                                                                |
 |:-----------------------|:--------------------------------------------------------------------------|
