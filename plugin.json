@@ -5,7 +5,7 @@
   "unsupportedPlatforms": [],
   "tags": "Openstack",
   "description": "Truesight Pulse Plugin for Openstack",
-  "icon": "openstack.png",
+  "icon": "icon.png",
   "command": "python plugin.py",
   "postInstall": "",
   "command_lua": "boundary-meter init.lua",

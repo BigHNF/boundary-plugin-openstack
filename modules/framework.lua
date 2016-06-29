@@ -10,16 +10,7 @@
 -- -- distributed under the License is distributed on an "AS IS" BASIS,
 -- -- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 -- -- See the License for the specific language governing permissions and
--- -- limitations under the License.-
---
--- ---------------
--- -- A Boundary Plugin Framework for easy development of custom Boundary.com plugins.
--- --
--- -- [https://github.com/boundary/boundary-plugin-framework-lua](https://github.com/boundary/boundary-plugin-framework-lua)
--- -- @module Boundary Plugin Framework for LUA
--- -- @author Gabriel Nicolas Avellaneda <avellaneda.gabriel@gmail.com>
--- -- @license Apache 2.0
--- -- @copyright 2015 Boundary, Inc
+-- -- limitations under the License.
 local boundary = require('boundary')
 local Emitter = require('core').Emitter
 local Error = require('core').Error
