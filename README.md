@@ -1,4 +1,4 @@
-# TrueSight Pulse Openstack Plugin
+# TrueSight Pulse OpenStack Plugin
 
 This plugin grabs metrics from the openstack node where it is started and parses the data to be able to integrate into boundary. To be able to start, ceilometer should be well configured on the machine and credentials needs to be created.
 Additional metrics can be added from the ceilometer by editing the plugin.py and adding or replacing different mapping tuple objects.
@@ -11,13 +11,13 @@ Additional metrics can be added from the ceilometer by editing the plugin.py and
 |:----------|:-----:|:-------:|:-------:|:----:|
 | Supported |   v   |         |         |      |
 
-- Openstack version Mitaka
+- OpenStack version Mitaka
 - Ceilometer >= 2.3.0
 
 #### For Centos/RHEL/Ubuntu
 
-- To install Openstack on centos v7.x/rhel v7.x [see instructions](https://www.rdoproject.org/install/quickstart/)
-- To install Openstack on ubuntu v14.04(trusty) [see instructions](http://docs.openstack.org/developer/devstack/guides/single-machine.html)
+- To install OpenStack on centos v7.x/rhel v7.x [see instructions](https://www.rdoproject.org/install/quickstart/)
+- To install OpenStack on ubuntu v14.04(trusty) [see instructions](http://docs.openstack.org/developer/devstack/guides/single-machine.html)
 
 #### TrueSight Pulse Meter versions v4.0 or later
 
@@ -44,7 +44,7 @@ Default path for ceilometer configuration file is "/etc/ceilometer/ceilometer.co
 |service_user    |The user to get into the service panel for OpenStack                    |
 |service_timeout |The timeout to get into the service panel for OpenStack                 |
 |service_password|The password to get into the service panel for OpenStack                |
-|pollInterval    |The polling interval (in milliseconds) to call the openstack collector  |
+|pollInterval    |The polling interval (in milliseconds) to call the openStack collector  |
 
 ### Metrics Collected
 
