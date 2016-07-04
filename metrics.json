@@ -165,7 +165,7 @@
     "displayName": "Summary of disk read rate",
     "description": "The total amount of disk read rate on all VMs running on the node",
     "unit": "number",
-    "displayNameShort": "OS DSK R rate SUM",
+    "displayNameShort": "OS DSK RD rate SUM",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
@@ -174,7 +174,7 @@
     "displayName": "Average disk read rate",
     "description": "Average amount of disk read rate on all VMs running on the node.",
     "unit": "number",
-    "displayNameShort": "OS DSK R rate AVG",
+    "displayNameShort": "OS DSK RD rate AVG",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"
@@ -183,7 +183,7 @@
     "displayName": "Summary of disk write rate",
     "description": "The total amount of disk write rate on all VMs running on the node.",
     "unit": "number",
-    "displayNameShort": "OS DSK W rate SUM",
+    "displayNameShort": "OS DSK WR rate SUM",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
@@ -192,7 +192,7 @@
     "displayName": "Average disk write rate",
     "description": "Average amount of disk write rate on all VMs running on the node.",
     "unit": "number",
-    "displayNameShort": "OS DSK W rate AVG",
+    "displayNameShort": "OS DSK WR rate AVG",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"

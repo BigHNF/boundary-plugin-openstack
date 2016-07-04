@@ -4,7 +4,7 @@
   "meterVersionRequired": "4.2.0-611",
   "unsupportedPlatforms": [],
   "tags": "OpenStack",
-  "description": "Truesight Pulse Plugin for Openstack",
+  "description": "TrueSight Pulse Plugin for OpenStack",
   "icon": "icon.png",
   "command": "boundary-meter init.lua",
   "postInstall": "",
