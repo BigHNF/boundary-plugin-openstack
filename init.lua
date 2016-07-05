@@ -82,7 +82,9 @@ function KeystoneClient:getToken(callback)
 	}
 	local req = post(options, data, callback, 'json') 
 	-- Propagate errors 
-	req:on('error', function (err) self:emit(err) end)
+	req:on('error', function (err) self:emit("error","_bevent:" .. "OpenStack Plugin:" .. " error: Could not connect to the specified host [" .. self.host ..  "]|t:error|tags:lua,plugin") 
+	print("_bevent:" .. "OpenStack Plugin:" .. " error: Could not connect to the specified host [" .. self.host ..  "]|t:error|tags:lua,plugin")
+	end)
 end
 
 function getEndpoint(name, endpoints)
