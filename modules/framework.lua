@@ -329,11 +329,11 @@ function Plugin:initialize(params, dataSource)
 	self.source = params.source or os.hostname()
 	self.dataSource = dataSource
 	self.version = params.version or '1.0'
-	self.name = params.name or 'Boundary Plugin'
+	self.name = params.name or 'OpenStack Plugin'
 
 	self.dataSource:on('error', function (msg) self:error(msg) end)
 
-    print("_bevent:" .. self.name .. " up : version " .. self.version ..  "|t:info|tags:lua,plugin")
+    print("_bevent:" .. self.name .. " up|t:info|tags:lua,plugin")
 end
 
 function Plugin:onPoll()
