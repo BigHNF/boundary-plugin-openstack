@@ -121,7 +121,7 @@ function CeilometerClient:getMetric(metric, period, callback)
                 local hasError = get('error', data)
 		if hasError ~= nil then
 			-- Propagate errors
-			self:emit('error', data)
+			--self:emit('error', data)
 			print("_bevent:" .. "OpenStack Plugin:" .. " error: Authentication failed for specified host [" .. self.host ..  "]|t:error|tags:lua,plugin")
 		else
 			local token = getToken(data) 
