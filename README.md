@@ -58,7 +58,7 @@ Default path for ceilometer configuration file is "/etc/ceilometer/ceilometer.co
 |OS_CPU_AVG              |Average CPU time used by the openstack VMs                                 |
 |OS_CPU_SUM              |Total CPU time used by the openstack VMs                                   |
 |OS_INSTANCE_EVENT_SUM   |Total running instances events                                             |
-|OS_INSTANCE_EVENT_MAX   |The maximum number of instances events started                             |
+|OS_INSTANCE_EVENT_MAX   |The maximum number of instances events                                     |
 |OS_VOLUME_EVENT_SUM     |Total volumes created events                                               |
 |OS_VOLUME_EVENT_AVG     |Average volumes created events                                             |
 |OS_IMAGE_SIZE_SUM       |The total amount of space used by the created images                       |
