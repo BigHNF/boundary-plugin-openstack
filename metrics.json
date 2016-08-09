@@ -63,8 +63,8 @@
     "defaultAggregate": "sum"
   },
   "OS_INSTANCE_EVENT_MAX": {
-    "displayName": "Maximum started instances events",
-    "description": "The maximum number of instances events started.",
+    "displayName": "The maximum number of instances events",
+    "description": "The maximum number of instances events",
     "unit": "number",
     "displayNameShort": "OS INST EVENT MAX",
     "defaultResolutionMS": 60000,
