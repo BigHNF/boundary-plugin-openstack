@@ -44,7 +44,7 @@ Default path for ceilometer configuration file is "/etc/ceilometer/ceilometer.co
 |service_user    |The user to get into the service panel for OpenStack                    |
 |service_timeout |The timeout to get into the service panel for OpenStack                 |
 |service_password|The password to get into the service panel for OpenStack                |
-|pollInterval    |The polling interval (in milliseconds) to call the openStack collector  |
+|pollInterval    |The polling interval (in milliseconds) to call the openStack collector. Default value for this is 60000 ms, we                        recommend not have smaller value.                                       |
 
 ### Metrics Collected
 
@@ -57,10 +57,10 @@ Default path for ceilometer configuration file is "/etc/ceilometer/ceilometer.co
 |OS_CPUUTIL_MAX          |The maximum openstack CPU utilization by VMs running on the node           |
 |OS_CPU_AVG              |Average CPU time used by the openstack VMs                                 |
 |OS_CPU_SUM              |Total CPU time used by the openstack VMs                                   |
-|OS_INSTANCE_SUM         |Summary of running instances in openstack                                  |
-|OS_INSTANCE_MAX         |The maximum number of instances started                                    |
-|OS_VOLUME_SUM           |Summary of created volumes                                                 |
-|OS_VOLUME_AVG           |Average of created volumes by the VMs running on the node                  |
+|OS_INSTANCE_EVENT_SUM   |Total running instances events                                             |
+|OS_INSTANCE_EVENT_MAX   |The maximum number of instances events                                     |
+|OS_VOLUME_EVENT_SUM     |Total volumes created events                                               |
+|OS_VOLUME_EVENT_AVG     |Average volumes created events                                             |
 |OS_IMAGE_SIZE_SUM       |The total amount of space used by the created images                       |
 |OS_IMAGE_SIZE_AVG       |Average amount of space used by the created images                         |
 |OS_DISK_READ_RATE_SUM   |The total amount of disk read rate on all VMs running on the node          |
