@@ -120,7 +120,7 @@
     "displayName": "Average volume created events",
     "description": "Average volume created events.",
     "unit": "number",
-    "displayNameShort": "OS VOL AVG",
+    "displayNameShort": "OS VOL EVENT AVG",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "avg"

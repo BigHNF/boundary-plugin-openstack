@@ -44,7 +44,7 @@
   "dashboards": [
     {
       "name": "Openstack Basic",
-      "layout": "d-w=4&d-h=3&d-pad=5&d-light=0&d-bg=none&d-g-OS_CPUUTIL_AVG=0-0-1-1&d-g-OS_CPUUTIL_SUM=1-0-1-1&d-g-OS_CPU_SUM=0-1-1-1&d-g-OS_CPUUTIL_MAX=3-0-1-1&d-g-OS_CPUUTIL_MIN=2-0-1-1&d-g-OS_CPU_AVG=1-1-1-1&d-g-OS_INSTANCE_MAX=2-1-1-1&d-g-OS_INSTANCE_SUM=3-1-1-1&d-g-OS_MEMORY_RESIDENT_AVG=0-2-1-1&d-g-OS_MEMORY_RESIDENT_SUM=1-2-1-1&d-g-OS_VOLUME_AVG=2-2-1-1&d-g-OS_VOLUME_SUM=3-2-1-1"
+      "layout": "d-w=4&d-h=3&d-pad=5&d-light=0&d-bg=none&d-g-OS_CPUUTIL_AVG=0-0-1-1&d-g-OS_CPUUTIL_SUM=1-0-1-1&d-g-OS_CPU_SUM=0-1-1-1&d-g-OS_CPUUTIL_MAX=3-0-1-1&d-g-OS_CPUUTIL_MIN=2-0-1-1&d-g-OS_CPU_AVG=1-1-1-1&d-g-OS_MEMORY_RESIDENT_AVG=0-2-1-1&d-g-OS_MEMORY_RESIDENT_SUM=1-2-1-1&d-g-OS_INSTANCE_EVENT_SUM=2-1-1-1&d-g-OS_INSTANCE_EVENT_MAX=3-1-1-1&d-g-OS_VOLUME_EVENT_SUM=2-2-1-1&d-g-OS_VOLUME_EVENT_AVG=3-2-1-1"
     },
     {
       "name": "Openstack Advanced",
