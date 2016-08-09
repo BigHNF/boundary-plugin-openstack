@@ -153,10 +153,10 @@ local mapping = {}
 
 mapping['cpu_util'] = {avg = 'OS_CPUUTIL_AVG', sum = 'OS_CPUUTIL_SUM', min = 'OS_CPUUTIL_MIN', max = 'OS_CPUUTIL_MAX'}
 mapping['cpu'] = {avg = 'OS_CPU_AVG', sum = 'OS_CPU_SUM'}
-mapping['instance'] = {sum = 'OS_INSTANCE_SUM', max = 'OS_INSTANCE_MAX'}
+mapping['instance'] = {sum = 'OS_INSTANCE_EVENT_SUM', max = 'OS_INSTANCE_EVENT_MAX'}
 mapping['memory'] = {sum = 'OS_MEMORY_SUM', avg = 'OS_MEMORY_AVG'}
 mapping['memory.usage'] = {sum = 'OS_MEMORY_USAGE_SUM', avg = 'OS_MEMORY_USAGE_AVG'}
-mapping['volume.size'] = {avg  = 'OS_VOLUME_AVG', sum = 'OS_VOLUME_SUM'}
+mapping['volume.size'] = {avg  = 'OS_VOLUME_EVENT_AVG', sum = 'OS_VOLUME_EVENT_SUM'}
 mapping['image'] = {sum = 'OS_IMAGE_SUM', avg = 'OS_IMAGE_AVG'}
 mapping['image.size'] = {avg = 'OS_IMAGE_SIZE_AVG', sum = 'OS_IMAGE_SIZE_SUM'}
 mapping['disk.read.requests.rate'] = {sum = 'OS_DISK_READ_RATE_SUM', avg = 'OS_DISK_READ_RATE_AVG'}

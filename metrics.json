@@ -53,20 +53,20 @@
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
-  "OS_INSTANCE_SUM": {
-    "displayName": "Total instances running",
-    "description": "Summary of running instances in openstack.",
+  "OS_INSTANCE_EVENT_SUM": {
+    "displayName": "Total running instances events",
+    "description": "Total running instances events",
     "unit": "number",
-    "displayNameShort": "OS INST SUM",
+    "displayNameShort": "OS INST EVENT  SUM",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
-  "OS_INSTANCE_MAX": {
-    "displayName": "Maximum started instances",
-    "description": "The maximum number of instances started.",
+  "OS_INSTANCE_EVENT_MAX": {
+    "displayName": "Maximum started instances events",
+    "description": "The maximum number of instances events started.",
     "unit": "number",
-    "displayNameShort": "OS INST MAX",
+    "displayNameShort": "OS INST EVENT MAX",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "max"
@@ -107,18 +107,18 @@
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
-  "OS_VOLUME_SUM": {
-    "displayName": "Total volume created",
-    "description": "Summary of created volumes",
+  "OS_VOLUME_EVENT_SUM": {
+    "displayName": "Total created volume events",
+    "description": "Total created volume events",
     "unit": "number",
-    "displayNameShort": "OS VOL SUM",
+    "displayNameShort": "OS VOL EVENT SUM",
     "defaultResolutionMS": 60000,
     "isDisabled": 0,
     "defaultAggregate": "sum"
   },
-  "OS_VOLUME_AVG": {
-    "displayName": "Average volume created",
-    "description": "Average of created volumes by the VMs running on the node.",
+  "OS_VOLUME_EVENT_AVG": {
+    "displayName": "Average volume created events",
+    "description": "Average volume created events.",
     "unit": "number",
     "displayNameShort": "OS VOL AVG",
     "defaultResolutionMS": 60000,
