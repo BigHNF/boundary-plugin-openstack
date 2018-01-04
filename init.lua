@@ -24,7 +24,15 @@ local table = require('table')
 local url = require('url')
 require('fun')(true)
 
-local params = framework.boundary.param
+local json = require('json')
+local env = require('env')
+
+local params = env.get("TSP_PLUGIN_PARAMS")
+if(params == nil or  params == '') then
+   params =  framework.boundary.param
+else
+   params = json.parse(params)
+end
 
 local HttpDataSource = DataSource:extend()
 local RandomDataSource = DataSource:extend()

@@ -1,6 +1,6 @@
 {
   "name": "TrueSight Pulse OpenStack plugin",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "meterVersionRequired": "4.2.0-611",
   "unsupportedPlatforms": [],
   "tags": "OpenStack",
@@ -11,6 +11,7 @@
   "command_lua": "boundary-meter init.lua",
   "postInstall_lua": "",
   "ignore": "",
+  "secure": true,
   "metrics": [
     "OS_CPUUTIL_AVG",
     "OS_CPUUTIL_SUM",
